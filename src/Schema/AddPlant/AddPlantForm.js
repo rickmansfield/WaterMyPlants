@@ -13,9 +13,9 @@ export default function AddPlantForm(props) {
     }
 
     const onSubmit = (evt) => {
-        history.push("/AddSuccess");
         evt.preventDefault();
         submit();
+        history.push("/AddSuccess");
     }
 
     return (

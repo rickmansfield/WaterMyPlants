@@ -35,7 +35,7 @@ export default function AddPlant() {
             .then((res) => {
                 setPlants([...plants, res.data]);
                 setFormValues(initialFormValues);
-                console.log(`HERE is postNewPlant`, postNewPlant);
+                // console.log(`HERE is postNewPlant`, postNewPlant);
             })
             .catch((err) => {
                 debugger;
@@ -65,7 +65,8 @@ export default function AddPlant() {
     };
 
     useEffect(() => {
-        schema.isValid(formValues).then((valid) => {
+        schema.isValid(formValues)
+        .then((valid) => {
             setDisabled(!valid);
         });
     }, [formValues]);
