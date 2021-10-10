@@ -67,7 +67,6 @@ function App() {
             <Route exact path='/' component={Home} />
             <Route path='/login'><LoginForm setToggle={flipToggle} /></Route>
             <Route path='/signUp'><SignupForm setToggle={flipToggle}/></Route> 
-
           </Switch>
         </Wrapper>
 
