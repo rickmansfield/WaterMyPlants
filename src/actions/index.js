@@ -23,3 +23,4 @@ export const add = (newPlant) => {
   export const login = (loginSuccess) => {
     return { type: LOGIN, payload: loginSuccess };
   };
+  

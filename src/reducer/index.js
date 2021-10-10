@@ -4,13 +4,13 @@ import {
     EDIT_PLANT,
     LOGIN,
     GET_PLANT,
-  } from '../actions/index';
+} from '../actions/index';
 
 const initialState = {
     user: {
-        username:'',
-        password:'',
-        phone:''
+        username: '',
+        password: '',
+        phone: ''
     },
     plant: {
         id: null,
@@ -59,7 +59,5 @@ const reducer = (state = initialState, action) => {
             return state;
     }
 };
-      
-
 
 export default reducer;
